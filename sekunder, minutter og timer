@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int seconds, minutes, hours;
+
+    printf("Enter seconds: ");
+    scanf("%d", &seconds);
+
+    minutes=seconds/60;
+    seconds=seconds%60;
+    hours=minutes/60;
+    seconds=minutes%60;
+
+    if (seconds==1)
+    {
+        printf("%d second", seconds);
+    }
+    else if (seconds>1)
+    {
+        printf("%d seconds", seconds);
+    }
+    if (minutes==1)
+    {
+        printf("%d minute", minutes);
+    }
+    else if (minutes>1)
+    {
+        printf("%d minutes", minutes);
+    }
+    if (hours==1)
+    {
+        printf("%d hour", hours);
+    }
+    else if (hours>1)
+    {
+        printf("%d hours", hours);
+    }
+    return(0);
+}
