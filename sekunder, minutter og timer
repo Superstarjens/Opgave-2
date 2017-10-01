@@ -11,32 +11,9 @@ int main(void)
 
     minutes=seconds/MINUTES;
     seconds=seconds%MINUTES;
-    hours=secounds/HOURS;
-    secounds=secounds%HOURS;
-
-    if (seconds==1)
-    {
-        printf("%d second", seconds);
-    }
-    else if (seconds>1)
-    {
-        printf("%d seconds", seconds);
-    }
-    if (minutes==1)
-    {
-        printf("%d minute", minutes);
-    }
-    else if (minutes>1)
-    {
-        printf("%d minutes", minutes);
-    }
-    if (hours==1)
-    {
-        printf("%d hour", hours);
-    }
-    else if (hours>1)
-    {
-        printf("%d hours", hours);
-    }
+    hours=minutes/HOURS;
+    secounds=minutes%HOURS;
+    
+    printf(¨%d secound, %d minutes, %d hours \n¨, secounds, minutes, hours);
     return(0);
 }
