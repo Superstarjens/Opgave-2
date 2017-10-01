@@ -1,4 +1,6 @@
 #include <stdio.h>
+#define MINUTES 60
+#define HOURS (MINUTES*60)
 
 int main(void)
 {
@@ -7,10 +9,10 @@ int main(void)
     printf("Enter seconds: ");
     scanf("%d", &seconds);
 
-    minutes=seconds/60;
-    seconds=seconds%60;
-    hours=minutes*60;
-    hours=minutes%60;
+    minutes=seconds/MINUTES;
+    seconds=seconds%MINUTES;
+    hours=secounds/HOURS;
+    secounds=secounds%HOURS;
 
     if (seconds==1)
     {
